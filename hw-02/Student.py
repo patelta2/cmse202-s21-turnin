@@ -20,6 +20,12 @@ class Student():
         '''
         print("My name is", self.name)
         
+    def get_gpa(self):
+        '''
+        This function returns the gpa
+        '''
+        return self.gpa
+        
     def enroll(self,courses):
         '''
         takes as input a list of courses and 
@@ -31,7 +37,7 @@ class Student():
         '''
         prints out courses
         '''
-        print("I am enrolled in:", self.courses)
+        print("I am enrolled in:", self.courses[:])
         
     def years_until_graduation(self):
         '''
